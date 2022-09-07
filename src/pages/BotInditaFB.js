@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect, history }from 'react'
-import { useParams, componentDidMount } from 'react-router-dom';
+import { useParams, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function BotInditaFB() {
   let {source, id, name, description } = useParams();
@@ -23,19 +23,23 @@ export default function BotInditaFB() {
     //console.warn("resp", resp);
     resp.json().then((result)=>{
       console.warn("result", result)
-        
+      //console.log(result.message)
+      if(result.message == 'Request Successfully'){
+        //navigate('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');
+        //<Link to="https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi" target="_blank" />
+        window.open('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');  
+      }
     })
   }))
 
   return (
     <div>
-        {/* http://localhost:3000/botFb/sourceIndita-FB&id22342&nameandri&descrption=registrasi-orbit 
-        Source : {source}<br />
-        Id Customer : {id}<br />
-        Nama Customer : {name}<br />
-        Description : {description}*/}
-          
-          {/* <a href='https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi'>Click</a> */}
-    </div>    
+    {/* //     http://localhost:3000/botFb/sourceIndita-FB&id22342&nameandri&descrption=registrasi-orbit 
+    //     Source : {source}<br />
+    //     Id Customer : {id}<br />
+    //     Nama Customer : {name}<br />
+    //     Description : {description} */}
+    </div>
+    
   )
 }
