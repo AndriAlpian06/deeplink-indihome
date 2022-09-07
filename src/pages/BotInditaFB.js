@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState, useEffect }from 'react'
+import React, { useState, useEffect, history }from 'react'
 import { useParams, componentDidMount } from 'react-router-dom';
 
 export default function BotInditaFB() {
@@ -23,6 +23,7 @@ export default function BotInditaFB() {
     //console.warn("resp", resp);
     resp.json().then((result)=>{
       console.warn("result", result)
+        
     })
   }))
 
@@ -33,8 +34,8 @@ export default function BotInditaFB() {
         Id Customer : {id}<br />
         Nama Customer : {name}<br />
         Description : {description}*/}
-        
-          <a href='https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi'>Click</a>
+          
+          {/* <a href='https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi'>Click</a> */}
     </div>    
   )
 }
