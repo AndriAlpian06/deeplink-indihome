@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState, useEffect, history }from 'react'
+import React, { useState, useEffect }from 'react'
 import { useParams } from 'react-router-dom';
 
 export default function BotInditaFB() {
@@ -24,22 +24,20 @@ export default function BotInditaFB() {
     resp.json().then((result)=>{
       console.warn("result", result)
       //console.log(result.message)
-      if(result.message == 'Request Successfully'){
-        // navigate('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');
-        // <Link to="https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi" target="_blank" />
-        window.open('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');  
+      if(result.message == 'Request Successfully'){  
+          window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
       }
     })
   }))
 
   return (
-    <div>
+    <>
     {/* //     http://localhost:3000/botFb/sourceIndita-FB&id22342&nameandri&descrption=registrasi-orbit 
     //     Source : {source}<br />
     //     Id Customer : {id}<br />
     //     Nama Customer : {name}<br />
     //     Description : {description} */}
-    </div>
+    </>
     
   )
 }
