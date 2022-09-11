@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect, history }from 'react'
-import { useParams, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export default function BotInditaFB() {
   let {source, id, name, description } = useParams();
@@ -25,8 +25,8 @@ export default function BotInditaFB() {
       console.warn("result", result)
       //console.log(result.message)
       if(result.message == 'Request Successfully'){
-        //navigate('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');
-        //<Link to="https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi" target="_blank" />
+        // navigate('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');
+        // <Link to="https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi" target="_blank" />
         window.open('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');  
       }
     })

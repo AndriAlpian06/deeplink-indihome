@@ -13,11 +13,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='profile' element={<Profile />} />
-        <Route path='BotInditaFB/source:source&id:id&name:name' element={<BotInditaFB />} />
-        <Route path='BotInditaWeb/source:source&id:id&name:name' element={<BotInditaWeb />} />
+        <Route path='BotInditaFB/source:source&id:id&description:description' element={<BotInditaFB />} />
+        <Route path='BotInditaWeb/source:source&id:id&description:description' element={<BotInditaWeb />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </Router>
