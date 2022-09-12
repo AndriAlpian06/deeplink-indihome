@@ -31,13 +31,13 @@ export default function BotInditaFB() {
   }))
 
   return (
-    <>
+    <div>
     {/* //     http://localhost:3000/botFb/sourceIndita-FB&id22342&nameandri&descrption=registrasi-orbit 
     //     Source : {source}<br />
     //     Id Customer : {id}<br />
     //     Nama Customer : {name}<br />
     //     Description : {description} */}
-    </>
+    </div>
     
   )
 }
