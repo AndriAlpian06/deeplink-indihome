@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom';
 
 const BotInditaWeb = () => {
-    const {source, id, name, description } = useParams();
-
-    const [posts, setPosts] = useState([]);
-    // const [bot_id, setBot] = useState('');
-    // const [body, setBody] = useState('');
+    const {source, id, description } = useParams();
 
     fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", {
     method: "POST",
@@ -15,15 +11,15 @@ const BotInditaWeb = () => {
     },
     body:JSON.stringify({
       bot_id: source,
-          name: name,
           id: id,
+          description:description
       })
     }).then((resp => {
     //console.warn("resp", resp);
       resp.json().then((result)=>{
       console.warn("result", result)
       //console.log(result.message)
-      if(result.message == 'Request Successfully'){
+      if(result.message === 'Request Successfully'){
         //window.open('https://indihome.co.id/landingpage/registrasi-indihome/form-registrasi');  
           window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
         }

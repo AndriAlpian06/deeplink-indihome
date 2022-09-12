@@ -2,11 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import Error from './Error';
 
-export default function BotInditaFB() {
+
+export default function Jurnalis() {
   let {source, id, description } = useParams();
   
-
-  //let data = { source, id, name, description}
   fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", {
     method: "POST",
     headers: {
@@ -23,7 +22,7 @@ export default function BotInditaFB() {
       console.warn("result", result)
       //console.log(result.message)
       if(result.message === 'Request Successfully'){  
-          window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
+          window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
       }else{
         <Error />
       }
@@ -32,12 +31,7 @@ export default function BotInditaFB() {
 
   return (
     <div>
-    {/* //     http://localhost:3000/botFb/sourceIndita-FB&id22342&nameandri&descrption=registrasi-orbit 
-    //     Source : {source}<br />
-    //     Id Customer : {id}<br />
-    //     Nama Customer : {name}<br />
-    //     Description : {description} */}
+
     </div>
-    
   )
 }

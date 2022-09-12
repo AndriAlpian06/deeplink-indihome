@@ -1,11 +1,17 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+//import { useParams } from 'react-router-dom';
 
 export default function Profile() {
-  useEffect(() => {
-    window.location.href = "https://google.com/contact";
-  }, []);
+  //let {source, id, description } = useParams();
+  // useEffect(() => {
+  //   window.location.href = "https://google.com/contact";
+  // }, []);
 
   return (
-    <div>Profile</div>
+    <div>
+         {/* Source : {source}<br />
+         Id Customer : {id}<br />
+         Description : {description} */}
+    </div>
   )
 }
