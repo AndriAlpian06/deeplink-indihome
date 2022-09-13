@@ -12,8 +12,8 @@ export default function Jurnalis() {
       'Authorization': 'f505e3c220665754022a6ec8cca5f8a9554bc3e213bc6d8a2f2e714140271a34'
     },
     body:JSON.stringify({
-      bot_id: source,
-          id: id,
+          bot_id: source,
+          customer_id: id,
           description:description
     })
   }).then((resp => {

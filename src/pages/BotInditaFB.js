@@ -7,6 +7,7 @@ export default function BotInditaFB() {
   
 
   //let data = { source, id, name, description}
+  console.log(source, id, description);
   fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", {
     method: "POST",
     headers: {
@@ -14,8 +15,8 @@ export default function BotInditaFB() {
     },
     body:JSON.stringify({
       bot_id: source,
-          id: id,
-          description:description
+      customer_id: id,
+      description:description
     })
   }).then((resp => {
     //console.warn("resp", resp);

@@ -11,8 +11,8 @@ const BotInditaWeb = () => {
     },
     body:JSON.stringify({
       bot_id: source,
-          id: id,
-          description:description
+      customer_id: id,
+      description:description
       })
     }).then((resp => {
     //console.warn("resp", resp);
