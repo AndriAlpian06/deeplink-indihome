@@ -30,7 +30,7 @@ export default function Fmc() {
     .then((response) => response.json())
     .then((result) => {
       if(result.message === 'Request Successfully'){  
-          window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
+          window.location.href = "https://smooa.indihome.co.id/#registration";
           //console.log(result);        
       }
       else
