@@ -21,6 +21,7 @@
     },
     "eslintConfig": {
       "extends": [
+        "@typescript-eslint/parser",
         "react-app",
         "react-app/jest"
       ]
