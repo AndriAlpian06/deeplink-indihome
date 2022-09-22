@@ -25,7 +25,8 @@ export default function Deeplink() {
     //.then(response => response.text())
     //.then(result => console.log(result))
     
-  fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
+  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa'){
+    fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       if(result.message === 'Request Successfully'){  
@@ -62,13 +63,15 @@ export default function Deeplink() {
                 window.location.href = "https://smooa.indihome.co.id/#registration";
             }
         }
-        else if(result.data[0] === 'Wifiid')
+        else if(result.data[0] === 'Olive-App')
         {
             //console.log('Wifiid')
-            if(result.data[2] === 'Registrasi-Wms')
-            {
-                window.location.href = "https://wifi.id/pasang-layanan";
-            }
+            window.location.href = "https://wifi.id/pasang-layanan";
+        }
+        else if(result.data[0] === 'Olive-Web')
+        {
+            //console.log('Wifiid')
+            window.location.href = "https://wifi.id/pasang-layanan";
         }        
       }
       else
@@ -77,6 +80,8 @@ export default function Deeplink() {
       }
     })
     .catch(error => console.log('error', error));
+  }
+  
 
   return (
     <div>

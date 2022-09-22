@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='Example' element={<Example />} />
+        <Route path='Example/:source&:id&:description' element={<Example />} />
         <Route path='Deeplink/source:source&id:id&description:description' element={<Deeplink />} />
         <Route path='*' element={<Error />} />
       </Routes>
