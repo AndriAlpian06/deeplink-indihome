@@ -12,8 +12,8 @@ function App() {
     <Router>
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='Example/:source&:id&:description' element={<Example />} />
-        <Route path='Deeplink/source:source&id:id&description:description' element={<Deeplink />} />
+        <Route path='Example/:source&:id&:name&:description' element={<Example />} />
+        <Route path='Deeplink/:source&:id&:name&:description' element={<Deeplink />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </Router>

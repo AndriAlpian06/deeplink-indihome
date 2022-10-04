@@ -5,7 +5,7 @@ import Error from './Error'
 
 function Example() {
 
-  let {source, id, description } = useParams();
+  let {source, id, name, description } = useParams();
   
   var myHeaders = new Headers();
         myHeaders.append("Authorization", "f505e3c220665754022a6ec8cca5f8a9554bc3e213bc6d8a2f2e714140271a34");
@@ -13,6 +13,7 @@ function Example() {
   var formdata = new FormData();
     formdata.append("bot_id", source);
     formdata.append("customer_id", id);
+    formdata.append("customer_name", name);
     formdata.append("description", description);
 
   var requestOptions = {
@@ -27,7 +28,6 @@ function Example() {
     .then((result) => {
       console.log(result)
       if(result.message === 'Request Successfully'){  
-        window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
         console.log(result)
         if(result.data[0] === 'Indita-Web'){
             //console.log('Web')
@@ -96,7 +96,13 @@ function Example() {
     //   getQueryVariable()
     // })
   return (
-    <div>Example</div>
+    <div>
+      <p>Channel : {source}</p>
+      <p>Id customer : {id}</p>
+      <p>Name customer : {name}</p>
+      <p>Description : {description}</p>
+    </div>
+    
   )
 }
 
