@@ -5,7 +5,7 @@ import Error from './Error';
 // link https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis
 
 export default function Deeplink() {
-  let {source, id, description } = useParams();
+  let {source, id, name, description } = useParams();
   
   var myHeaders = new Headers();
         myHeaders.append("Authorization", "f505e3c220665754022a6ec8cca5f8a9554bc3e213bc6d8a2f2e714140271a34");
@@ -14,6 +14,7 @@ export default function Deeplink() {
     formdata.append("bot_id", source);
     formdata.append("customer_id", id);
     formdata.append("description", description);
+    formdata.append("customer_name", name);
 
   var requestOptions = {
     method: 'POST',
