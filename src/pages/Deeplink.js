@@ -47,6 +47,10 @@ export default function Deeplink() {
             {
                 window.location.href = "https://smooa.indihome.co.id/#registration";
             }
+            else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
+            {
+              window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
+            }
         }
         else if(result.data[0] === 'Indita-FB')
         {
@@ -63,6 +67,10 @@ export default function Deeplink() {
             {
                 window.location.href = "https://smooa.indihome.co.id/#registration";
             }
+            else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
+            {
+              window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
+            }
         }
         else if(result.data[0] === 'Indita-WA')
         {
@@ -78,6 +86,10 @@ export default function Deeplink() {
             else if(result.data[2] === 'Registrasi-Addon-Smooa')
             {
                 window.location.href = "https://smooa.indihome.co.id/#registration";
+            }
+            else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
+            {
+              window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
             }
         }
         else if(result.data[0] === 'Olive-App')
