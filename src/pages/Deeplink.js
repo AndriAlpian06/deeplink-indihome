@@ -26,7 +26,7 @@ export default function Deeplink() {
     //.then(response => response.text())
     //.then(result => console.log(result))
     
-  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa'){
+  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa' || "Registrasi-FIFA-World-Cup-Qatar-2022"){
     fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
     .then((response) => response.json())
     .then((result) => {
