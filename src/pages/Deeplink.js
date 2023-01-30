@@ -51,7 +51,7 @@ export default function Deeplink() {
             {
               window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
             }
-            else if(result.data[2] === 'Paket-dengan-Netflix-100mbps')
+            else if(result.data[2] === 'Registrasi-Paket-dengan-Netflix-100mbps')
             {
               window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
             }
