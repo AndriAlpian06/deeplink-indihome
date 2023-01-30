@@ -26,7 +26,7 @@ export default function Deeplink() {
     //.then(response => response.text())
     //.then(result => console.log(result))
     
-  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa' || "Registrasi-FIFA-World-Cup-Qatar-2022"){
+  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa' || "Registrasi-FIFA-World-Cup-Qatar-2022" || "Paket-dengan-Netflix-100mbps"){
     fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
     .then((response) => response.json())
     .then((result) => {
@@ -51,6 +51,10 @@ export default function Deeplink() {
             {
               window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
             }
+            else if(result.data[2] === 'Paket-dengan-Netflix-100mbps')
+            {
+              window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
+            }
         }
         else if(result.data[0] === 'Indita-FB')
         {
@@ -70,6 +74,10 @@ export default function Deeplink() {
             else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
             {
               window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
+            }
+            else if(result.data[2] === 'Paket-dengan-Netflix-100mbps')
+            {
+              window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
             }
         }
         else if(result.data[0] === 'Indita-WA')
