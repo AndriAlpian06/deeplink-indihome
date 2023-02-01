@@ -37,7 +37,8 @@ export default function Deeplink() {
             //console.log('Web')
             if(result.data[2] === 'Registrasi-Orbit')
             {
-                window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
+                // window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
+                window.location.href = "https://indihome.co.id/landingpage/indihome_orbit/tanpa-kredit";
             }
             else if(result.data[2] === 'Registrasi-Paket-Jurnalis')
             {
@@ -61,7 +62,8 @@ export default function Deeplink() {
             //console.log('FB')
             if(result.data[2] === 'Registrasi-Orbit')
             {
-                window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
+                // window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
+                window.location.href = "https://indihome.co.id/landingpage/indihome_orbit/tanpa-kredit";
             }
             else if(result.data[2] === 'Registrasi-Paket-Jurnalis')
             {
