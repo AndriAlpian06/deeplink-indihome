@@ -26,7 +26,7 @@ export default function Deeplink() {
     //.then(response => response.text())
     //.then(result => console.log(result))
     
-  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa' || "Registrasi-FIFA-World-Cup-Qatar-2022" || "Paket-dengan-Netflix-100mbps"){
+  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa' || "Registrasi-FIFA-World-Cup-Qatar-2022" || "Paket-dengan-Netflix-100mbps" || "Registrasi-WMSLiteSilver"){
     fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
     .then((response) => response.json())
     .then((result) => {
@@ -106,7 +106,11 @@ export default function Deeplink() {
         else if(result.data[0] === 'Olive-App')
         {
             //console.log('Wifiid')
-            window.location.href = "https://wifi.id/pasang-layanan";
+           if(result.data[2] === 'Registrasi-WMSLiteSilver')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            
         }
         else if(result.data[0] === 'Olive-Web')
         {
