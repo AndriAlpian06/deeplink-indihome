@@ -46,7 +46,7 @@ export default function Deeplink() {
             }
             else if(result.data[2] === 'Registrasi-Addon-Smooa')
             {
-                window.location.href = "https://smooa.indihome.co.id/#registration";
+                window.location.href = "https://my.indihome.co.id/shop/internet/smooa";
             }
             else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
             {
@@ -71,7 +71,7 @@ export default function Deeplink() {
             }
             else if(result.data[2] === 'Registrasi-Addon-Smooa')
             {
-                window.location.href = "https://smooa.indihome.co.id/#registration";
+                window.location.href = "https://my.indihome.co.id/shop/internet/smooa";
             }
             else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
             {
