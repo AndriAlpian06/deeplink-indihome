@@ -50,11 +50,11 @@ export default function Deeplink() {
             }
             else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
             {
-              window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
+                window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
             }
             else if(result.data[2] === 'Registrasi-Paket-dengan-Netflix-100mbps')
             {
-              window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
+                window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
             }
         }
         else if(result.data[0] === 'Indita-FB')
@@ -75,11 +75,11 @@ export default function Deeplink() {
             }
             else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
             {
-              window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
+                window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
             }
             else if(result.data[2] === 'Registrasi-Paket-Netflix-100mbps')
             {
-              window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
+                window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
             }
         }
         else if(result.data[0] === 'Indita-WA')
