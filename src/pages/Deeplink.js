@@ -26,81 +26,50 @@ export default function Deeplink() {
     //.then(response => response.text())
     //.then(result => console.log(result))
     
-  if(description === 'Registrasi-Orbit' || 'Registrasi-Paket-Jurnalis' || 'Registrasi-Addon-Smooa' || "Registrasi-FIFA-World-Cup-Qatar-2022" || "Paket-dengan-Netflix-100mbps" || "Registrasi-WMSLiteSilver"){
+  if(description === 'Registrasi-Paket-Jitu-1P' || 'Registrasi-Paket-Jitu-2P' || 'Registrasi-Paket-Jitu-3P' || "Registrasi-Paket-Gamer" || "Registrasi-Paket-One-Dynamic" || "Registrasi-Paket-One-Complete" || "Registrasi-Paket-Rumah-Ibadah-1P" || "Registrasi-Paket-Rumah-Ibadah-2P"){
     fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       if(result.message === 'Request Successfully'){  
         //window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
         //console.log(result.data[0])
-        if(result.data[0] === 'Indita-Web'){
+        if(result.data[0] === 'Whatsapp'){
             //console.log('Web')
-            if(result.data[2] === 'Registrasi-Orbit')
+            if(result.data[2] === 'Registrasi-Paket-Jitu-1P')
             {
-                // window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
-                window.location.href = "https://indihome.co.id/landingpage/indihome_orbit/tanpa-kredit";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/singleplay";
             }
-            else if(result.data[2] === 'Registrasi-Paket-Jurnalis')
+            else if(result.data[2] === 'Registrasi-Paket-Jitu-2P')
             {
-                window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/dualplay";
             }
-            else if(result.data[2] === 'Registrasi-Addon-Smooa')
+            else if(result.data[2] === 'Registrasi-Paket-Jitu-3P')
             {
-                window.location.href = "https://my.indihome.co.id/shop/internet/smooa";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/tripleplay";
             }
-            else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
+            else if(result.data[2] === 'Registrasi-Paket-Gamer')
             {
-                window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/indihome-gamer";
             }
-            else if(result.data[2] === 'Registrasi-Paket-dengan-Netflix-100mbps')
+            else if(result.data[2] === 'Registrasi-Paket-Netflix')
             {
-                window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/indihome-netflix";
             }
-        }
-        else if(result.data[0] === 'Indita-FB')
-        {
-            //console.log('FB')
-            if(result.data[2] === 'Registrasi-Orbit')
+            else if(result.data[2] === 'Registrasi-Paket-One-Dynamic')
             {
-                // window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
-                window.location.href = "https://indihome.co.id/landingpage/indihome_orbit/tanpa-kredit";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/dynamic";
             }
-            else if(result.data[2] === 'Registrasi-Paket-Jurnalis')
+            else if(result.data[2] === 'Registrasi-Paket-One-Complete')
             {
-                window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/complete";
             }
-            else if(result.data[2] === 'Registrasi-Addon-Smooa')
+            else if(result.data[2] === 'Registrasi-Paket-Rumah-Ibadah-1P')
             {
-                window.location.href = "https://my.indihome.co.id/shop/internet/smooa";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/rumah-ibadah-singleplay";
             }
-            else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
+            else if(result.data[2] === 'Registrasi-Paket-Rumah-Ibadah-2P')
             {
-                window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Netflix-100mbps')
-            {
-                window.location.href = "https://indihome.co.id/myindihome/pasang-baru/form-registrasi";
-            }
-        }
-        else if(result.data[0] === 'Indita-WA')
-        {
-            //console.log('FB')
-            if(result.data[2] === 'Registrasi-Orbit')
-            {
-                //window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
-                window.location.href = "https://indihome.co.id/landingpage/indihome_orbit/tanpa-kredit";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Jurnalis')
-            {
-                window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
-            }
-            else if(result.data[2] === 'Registrasi-Addon-Smooa')
-            {
-                window.location.href = "https://smooa.indihome.co.id/#registration";
-            }
-            else if(result.data[2] === 'Registrasi-FIFA-World-Cup-Qatar-2022')
-            {
-              window.location.href = "https://indihome.co.id/landingpage/ott-vidio";
+                window.location.href = "https://indihome.co.id/landingpage/indihomecare/rumah-ibadah-dualplay";
             }
         }
         else if(result.data[0] === 'Olive-App')
