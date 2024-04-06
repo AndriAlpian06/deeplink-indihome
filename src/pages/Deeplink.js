@@ -95,7 +95,16 @@ export default function Deeplink() {
             else if(result.data[2] === 'Registrasi-WMSLitePlatinum')
             {
                 window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSGamer20Mbps')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSGamer40Mbps')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
             }        
+            
       }
       else
       {
