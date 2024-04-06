@@ -2,8 +2,6 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import Error from './Error';
 
-// link https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis
-
 export default function Deeplink() {
   let {source, id, name, description } = useParams();
   
@@ -23,16 +21,12 @@ export default function Deeplink() {
     redirect: 'follow'
   };
     
-    //.then(response => response.text())
-    //.then(result => console.log(result))
     
   if(description === 'Registrasi-Paket-Jitu-1P' || 'Registrasi-Paket-Jitu-2P' || 'Registrasi-Paket-Jitu-3P' || "Registrasi-Paket-Gamer" || "Registrasi-Paket-One-Dynamic" || "Registrasi-Paket-One-Complete" || "Registrasi-Paket-Rumah-Ibadah-1P" || "Registrasi-Paket-Rumah-Ibadah-2P"){
     fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
     .then((response) => response.json())
     .then((result) => {
-      if(result.message === 'Request Successfully'){  
-        //window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
-        //console.log(result.data[0])
+      if(result.message === 'Request Successfully'){ 
         if(result.data[0] === 'Whatsapp'){
             //console.log('Web')
             if(result.data[2] === 'Registrasi-Paket-Jitu-1P')
@@ -79,13 +73,29 @@ export default function Deeplink() {
             {
                 window.location.href = "https://wifi.id/pasang-layanan";
             }
+            else if(result.data[2] === 'Registrasi-WMSLiteGold')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSLitePlatinum')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
             
         }
         else if(result.data[0] === 'Olive-Web')
-        {
-            //console.log('Wifiid')
-            window.location.href = "https://wifi.id/pasang-layanan";
-        }        
+          if(result.data[2] === 'Registrasi-WMSLiteSilver')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSLiteGold')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSLitePlatinum')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }        
       }
       else
       {
