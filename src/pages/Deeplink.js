@@ -66,6 +66,22 @@ export default function Deeplink() {
                 window.location.href = "https://indihome.co.id/landingpage/indihomecare/rumah-ibadah-dualplay";
             }
         }
+        else if(result.data[0] === 'Indita-WA')
+        {
+            //console.log('FB')
+            if(result.data[2] === 'Registrasi-Orbit')
+            {
+                window.location.href = "https://indihome.co.id/program/fmc/orbit/pemasangan-baru";
+            }
+            else if(result.data[2] === 'Registrasi-Paket-Jurnalis')
+            {
+                window.location.href = "https://www.indihome.co.id/promo/paket-pelajar-pengajar-dan-jurnalis";
+            }
+            else if(result.data[2] === 'Registrasi-Addon-Smooa')
+            {
+                window.location.href = "https://smooa.indihome.co.id/#registration";
+            }
+        }
         else if(result.data[0] === 'Olive-App')
         {
             //console.log('Wifiid')
