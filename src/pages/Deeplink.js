@@ -22,7 +22,7 @@ export default function Deeplink() {
   };
     
     
-  if(description === 'Registrasi-Paket-Jitu-1P' || 'Registrasi-Paket-Jitu-2P' || 'Registrasi-Paket-Jitu-3P' || "Registrasi-Paket-Gamer" || "Registrasi-Paket-One-Dynamic" || "Registrasi-Paket-One-Complete" || "Registrasi-Paket-Rumah-Ibadah-1P" || "Registrasi-Paket-Rumah-Ibadah-2P"){
+  if(description === 'Registrasi-WMSLiteSilver' || 'Registrasi-WMSLiteSilverPlus' || 'Registrasi-WMSLiteGold' || "Registrasi-WMSLitePlatinum"){
     fetch("https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink", requestOptions)
     .then((response) => response.json())
     .then((result) => {
@@ -84,10 +84,6 @@ export default function Deeplink() {
             {
                 window.location.href = "https://wifi.id/pasang-layanan";
             }    
-      }
-      else
-      {
-        <Error />
       }
     })
     .catch(error => console.log('error', error));
