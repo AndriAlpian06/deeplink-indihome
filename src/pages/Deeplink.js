@@ -27,47 +27,8 @@ export default function Deeplink() {
     .then((response) => response.json())
     .then((result) => {
       if(result.message === 'Request Successfully'){ 
-        if(result.data[0] === 'Whatsapp'){
-            //console.log('Web')
-            if(result.data[2] === 'Registrasi-Paket-Jitu-1P')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/singleplay";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Jitu-2P')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/dualplay";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Jitu-3P')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/tripleplay";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Gamer')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/indihome-gamer";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Netflix')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/indihome-netflix";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-One-Dynamic')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/dynamic";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-One-Complete')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/complete";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Rumah-Ibadah-1P')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/rumah-ibadah-singleplay";
-            }
-            else if(result.data[2] === 'Registrasi-Paket-Rumah-Ibadah-2P')
-            {
-                window.location.href = "https://indihome.co.id/landingpage/indihomecare/rumah-ibadah-dualplay";
-            }
-        }
-        else if(result.data[0] === 'Olive-App')
-        {
+        if(result.data[0] === 'Olive-App')
+          {
             //console.log('Wifiid')
            if(result.data[2] === 'Registrasi-WMSLiteSilver')
             {
