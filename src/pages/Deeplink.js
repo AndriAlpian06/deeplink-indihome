@@ -106,6 +106,24 @@ export default function Deeplink() {
             }        
             
       }
+      else if(result.data[0] === 'Olive-Wa')
+          if(result.data[2] === 'Registrasi-WMSLiteSilver')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSLiteSilverPlus')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSLiteGold')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }
+            else if(result.data[2] === 'Registrasi-WMSLitePlatinum')
+            {
+                window.location.href = "https://wifi.id/pasang-layanan";
+            }    
+      }
       else
       {
         <Error />
