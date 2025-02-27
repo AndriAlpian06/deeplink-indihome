@@ -38,7 +38,6 @@ export default function Deeplink() {
       .then((result) => {
         if (result.message === "Request Successfully") {
           if (result.data[0] === "Olive-App") {
-            //console.log('Wifiid')
             if (result.data[2] === "Registrasi-WMSLiteSilver") {
               window.location.href = "https://wifi.id/pasang-layanan";
             } else if (result.data[2] === "Registrasi-WMSLiteSilverPlus") {
@@ -58,7 +57,7 @@ export default function Deeplink() {
             } else if (result.data[2] === "Registrasi-WMSLitePlatinum") {
               window.location.href = "https://wifi.id/pasang-layanan";
             }
-          } else if (result.data[0] === "Olive-Wa") {
+          } else if (result.data[0] === "Olive-Whatsapp") {
             if (result.data[2] === "Registrasi-WMSLiteSilver") {
               window.location.href = "https://wifi.id/pasang-layanan";
             } else if (result.data[2] === "Registrasi-WMSLiteSilverPlus") {
