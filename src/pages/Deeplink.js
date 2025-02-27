@@ -137,14 +137,40 @@ export default function Deeplink() {
                 "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             }
           } else if (result.data[0] === "Olive-Whatsapp") {
-            if (result.data[2] === "Registrasi-WMSLiteSilver") {
-              window.location.href = "https://wifi.id/pasang-layanan";
-            } else if (result.data[2] === "Registrasi-WMSLiteSilverPlus") {
-              window.location.href = "https://wifi.id/pasang-layanan";
-            } else if (result.data[2] === "Registrasi-WMSLiteGold") {
-              window.location.href = "https://wifi.id/pasang-layanan";
-            } else if (result.data[2] === "Registrasi-WMSLitePlatinum") {
-              window.location.href = "https://wifi.id/pasang-layanan";
+            if (result.data[2] === "Registrasi-WMSLiteSilver-ViaWeb&Web") {
+              window.location.href =
+                "https://indibiz.co.id/my/produk/wifi-internet/paket";
+            } else if (
+              result.data[2] === "Registrasi-WMSLiteSilverPlus-ViaWeb&Web"
+            ) {
+              window.location.href =
+                "https://indibiz.co.id/my/produk/wifi-internet/paket";
+            } else if (result.data[2] === "Registrasi-WMSLiteGold-ViaWeb&Web") {
+              window.location.href =
+                "https://indibiz.co.id/my/produk/wifi-internet/paket";
+            } else if (
+              result.data[2] === "Registrasi-WMSLitePlatinum-ViaWeb&Web"
+            ) {
+              window.location.href =
+                "https://indibiz.co.id/my/produk/wifi-internet/paket";
+            } else if (
+              result.data[2] === "Registrasi-WMSLiteSilver-ViaApp&App"
+            ) {
+              window.location.href =
+                "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
+            } else if (
+              result.data[2] === "Registrasi-WMSLiteSilverPlus-ViaApp&App"
+            ) {
+              window.location.href =
+                "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
+            } else if (result.data[2] === "Registrasi-WMSLiteGold-ViaApp&App") {
+              window.location.href =
+                "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
+            } else if (
+              result.data[2] === "Registrasi-WMSLitePlatinum-ViaApp&App"
+            ) {
+              window.location.href =
+                "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             }
           }
         }
