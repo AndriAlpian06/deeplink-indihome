@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Error from "./Error";
 
 export default function Deeplink() {
   let { source, id, name, description, via } = useParams();
@@ -39,49 +38,49 @@ export default function Deeplink() {
         if (result.message === "Request Successfully") {
           if (result.data[0] === "Olive-App") {
             if (
-              result.data[2] === "Registrasi-WMSLiteSilver" &&
+              result.data[2] === "Registrasi-WMSLiteSilverViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteSilverPlus" &&
+              result.data[2] === "Registrasi-WMSLiteSilverPlusViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteGold" &&
+              result.data[2] === "Registrasi-WMSLiteGoldViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLitePlatinum" &&
+              result.data[2] === "Registrasi-WMSLitePlatinumViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteSilver" &&
+              result.data[2] === "Registrasi-WMSLiteSilverViaApp" &&
               via === "App"
             ) {
               window.location.href =
                 "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteSilverPlus" &&
+              result.data[2] === "Registrasi-WMSLiteSilverPlusViaApp" &&
               via === "App"
             ) {
               window.location.href =
                 "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteGold" &&
+              result.data[2] === "Registrasi-WMSLiteGoldViaApp" &&
               via === "App"
             ) {
               window.location.href =
                 "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             } else if (
-              result.data[2] === "Registrasi-WMSLitePlatinum" &&
+              result.data[2] === "Registrasi-WMSLitePlatinumViaApp" &&
               via === "App"
             ) {
               window.location.href =
@@ -89,49 +88,49 @@ export default function Deeplink() {
             }
           } else if (result.data[0] === "Olive-Web") {
             if (
-              result.data[2] === "Registrasi-WMSLiteSilver" &&
+              result.data[2] === "Registrasi-WMSLiteSilver-ViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteSilver" &&
+              result.data[2] === "Registrasi-WMSLiteSilverPlus-ViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteGold" &&
+              result.data[2] === "Registrasi-WMSLiteGold-ViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLitePlatinum" &&
+              result.data[2] === "Registrasi-WMSLitePlatinum-ViaWeb" &&
               via === "Web"
             ) {
               window.location.href =
                 "https://indibiz.co.id/my/produk/wifi-internet/paket";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteSilver" &&
+              result.data[2] === "Registrasi-WMSLiteSilver-ViaApp" &&
               via === "App"
             ) {
               window.location.href =
                 "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteSilver" &&
+              result.data[2] === "Registrasi-WMSLiteSilverPlus-ViaApp" &&
               via === "App"
             ) {
               window.location.href =
                 "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             } else if (
-              result.data[2] === "Registrasi-WMSLiteGold" &&
+              result.data[2] === "Registrasi-WMSLiteGold-ViaApp" &&
               via === "App"
             ) {
               window.location.href =
                 "https://play.google.com/store/apps/details?id=co.id.telkom.mysooltan&pli=1";
             } else if (
-              result.data[2] === "Registrasi-WMSLitePlatinum" &&
+              result.data[2] === "Registrasi-WMSLitePlatinum-ViaApp" &&
               via === "App"
             ) {
               window.location.href =
