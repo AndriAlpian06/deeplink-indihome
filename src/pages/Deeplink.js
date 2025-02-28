@@ -40,34 +40,25 @@ export default function Deeplink() {
     Whatsapp: WebLink,
   };
 
-  if (
-    description === "Registrasi-WMSLiteSilver" ||
-    "Registrasi-WMSLiteSilverPlus" ||
-    "Registrasi-WMSLiteGold" ||
-    "Registrasi-WMSLitePlatinum"
-  ) {
-    fetch(
-      "https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink",
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((result) => {
-        if (result.message === "Request Successfully") {
-          if (
-            ["Olive-App", "Olive-Web", "Olive-Whatsapp"].includes(
-              result.data[0]
-            )
-          ) {
-            let packageType = result.data[2].replace(`-Via${via}`, "");
+  fetch(
+    "https://whatsapp.infomedia.co.id/wa_api/api/open/addhitlink",
+    requestOptions
+  )
+    .then((response) => response.json())
+    .then((result) => {
+      if (result.message === "Request Successfully") {
+        if (
+          ["Olive-App", "Olive-Web", "Olive-Whatsapp"].includes(result.data[0])
+        ) {
+          let packageType = result.data[2].replace(`-Via${via}`, "");
 
-            if (validPackage.includes(packageType) && linkMap[via]) {
-              window.location.href = linkMap[via];
-            }
+          if (validPackage.includes(packageType) && linkMap[via]) {
+            window.location.href = linkMap[via];
           }
         }
-      })
-      .catch((error) => console.log("error", error));
-  }
+      }
+    })
+    .catch((error) => console.log("error", error));
 
   return <div></div>;
 }
